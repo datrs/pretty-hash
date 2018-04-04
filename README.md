@@ -10,6 +10,17 @@ Output binary buffers as a nice, shortened hex string. Adapted from
 
 ## Usage
 ```rust
+extern crate pretty_hash;
+
+use pretty_hash::PrettyHash;
+
+fn main() {
+  let hash = PrettyHash::fmt(b"1234").unwrap();
+  assert_eq!(hash, "31323334");
+
+  let hash = PrettyHash::fmt(b"12345").unwrap();
+  assert_eq!(hash, "313233..35");
+}
 ```
 
 ## Installation
