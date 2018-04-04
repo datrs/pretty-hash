@@ -2,7 +2,8 @@
 [![crates.io version][1]][2] [![build status][3]][4]
 [![downloads][5]][6] [![docs.rs docs][7]][8]
 
-Output binary buffers as a nice, shortened hex string..
+Output binary buffers as a nice, shortened hex string. Adapted from
+[pfrazee/pretty-hash](https://github.com/pfrazee/pretty-hash).
 
 - [Documentation][8]
 - [Crates.io][2]
