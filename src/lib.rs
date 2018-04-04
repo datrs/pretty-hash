@@ -11,7 +11,6 @@ use failure::Error;
 use std::fmt::Write;
 
 /// Pretty hash representation.
-#[derive(Debug)]
 pub struct PrettyHash {}
 
 impl PrettyHash {
