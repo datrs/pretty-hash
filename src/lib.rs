@@ -1,7 +1,16 @@
-#![deny(missing_docs)]
+#![forbid(unsafe_code, missing_debug_implementations, missing_docs)]
 #![cfg_attr(test, deny(warnings))]
-#![feature(external_doc)]
-#![doc(include = "../README.md")]
+
+//! ## Example
+//! ```rust
+//! extern crate pretty_hash;
+//!
+//! let hash = pretty_hash::fmt(b"1234").unwrap();
+//! assert_eq!(hash, "31323334");
+//!
+//! let hash = pretty_hash::fmt(b"12345").unwrap();
+//! assert_eq!(hash, "313233..35");
+//! ```
 
 extern crate failure;
 
