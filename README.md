@@ -31,7 +31,7 @@ $ cargo add pretty-hash
 [2]: https://crates.io/crates/pretty-hash
 [3]: https://img.shields.io/travis/datrs/pretty-hash.svg?style=flat-square
 [4]: https://travis-ci.org/datrs/pretty-hash
-[5]: https://img.shields.io/crates/d/pretty-hash.svg?style=flat-square
+[5]: https://img.shields.io/crates/d/pretty-hash/master.svg?style=flat-square
 [6]: https://crates.io/crates/pretty-hash
-[7]: https://docs.rs/pretty-hash/badge.svg
+[7]: https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square
 [8]: https://docs.rs/pretty-hash
