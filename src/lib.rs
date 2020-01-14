@@ -22,7 +22,7 @@ pub fn fmt(input: &[u8]) -> Result<String, Error> {
   let mut string = String::new();
 
   for &byte in input {
-    write!(&mut string, "{:x}", byte)?;
+    write!(&mut string, "{:02x}", byte)?;
   }
 
   if string.len() > 8 {
