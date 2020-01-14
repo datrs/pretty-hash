@@ -15,15 +15,11 @@
 extern crate failure;
 
 use failure::Error;
-use std::fmt::Write;
 
 /// Prettify a byte slice.
 pub fn fmt(input: &[u8]) -> Result<String, Error> {
-  let mut string = String::new();
-
-  for &byte in input {
-    write!(&mut string, "{:x}", byte)?;
-  }
+  let string: String =
+    input.iter().map(|byte| format!("{:02x}", byte)).collect();
 
   if string.len() > 8 {
     let (head, tail) = string.split_at(6);
