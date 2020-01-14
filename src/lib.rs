@@ -19,10 +19,8 @@ use failure::Error;
 
 /// Prettify a byte slice.
 pub fn fmt(input: &[u8]) -> Result<String, Error> {
-  let string = input
-    .iter()
-    .map(|byte| format!("{:02x}", byte))
-    .collect::<String>();
+  let string: String =
+    input.iter().map(|byte| format!("{:02x}", byte)).collect();
 
   if string.len() > 8 {
     let (head, tail) = string.split_at(6);
