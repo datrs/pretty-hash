@@ -15,7 +15,6 @@
 extern crate failure;
 
 use failure::Error;
-// use std::fmt::Write;
 
 /// Prettify a byte slice.
 pub fn fmt(input: &[u8]) -> Result<String, Error> {
